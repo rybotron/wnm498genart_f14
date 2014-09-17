@@ -1,2 +1,2 @@
-wnm498genart_f14
+WNM 498 Generative Art & Creative Code Fall 2014
 ================
