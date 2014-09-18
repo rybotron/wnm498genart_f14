@@ -202,7 +202,7 @@ function draw() {
 	textSize(100);
 	textFont("Helvetica");
 	textStyle(BOLD);
-	text("PACKMAN", 600, 590); 
+	text("PACMAN", 600, 590); 
 	}
 	var value = 0;
 	function mouseClicked() {
