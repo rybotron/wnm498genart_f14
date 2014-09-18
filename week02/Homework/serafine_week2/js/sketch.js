@@ -3,12 +3,8 @@ function setup (){
 	createCanvas(800,1000);
 	frameRate(2000);
 	background(246, 239, 229);
-}
-//sets up a canvas -- will create defaut (100px x 100px) canvas if you leave this blank
 
-function draw (){
-
-	push();
+		push();
 
 	translate(10, 100);
 
@@ -50,6 +46,10 @@ function draw (){
 		fill(0);
 		ellipse (290, 280, 15, 15);
 		ellipse (510, 280, 15, 15);
+}
+//sets up a canvas -- will create defaut (100px x 100px) canvas if you leave this blank
+
+function draw (){
 
 
 	if(mouseIsPressed){
