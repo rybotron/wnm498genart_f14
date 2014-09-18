@@ -16,7 +16,7 @@ import java.util.Calendar;
 
 boolean savePDF = false;
 
-String inputText = "Ihr naht euch wieder, schwankende Gestalten, Die früh sich einst dem trüben Blick gezeigt. Versuch ich wohl, euch diesmal festzuhalten? Fühl ich mein Herz noch jenem Wahn geneigt? Ihr drängt euch zu! nun gut, so mögt ihr walten, Wie ihr aus Dunst und Nebel um mich steigt; Mein Busen fühlt sich jugendlich erschüttert Vom Zauberhauch, der euren Zug umwittert. Ihr bringt mit euch die Bilder froher Tage, Und manche liebe Schatten steigen auf; Gleich einer alten, halbverklungnen Sage Kommt erste Lieb und Freundschaft mit herauf; Der Schmerz wird neu, es wiederholt die Klage.";
+String inputText = "Hi, my name is Kristin. I am a New Media Designer, living in San Francisco, CA. All of my life I have had a passion for design and marketing. I take great pride in helping my clients discover their own visual voice through personal branding and artistic flare. I am a self-motivated individual with a positive attitude about life and a deep desire to make a difference in the world through my art. My design experience has helped me to conceptualize ideas and quickly develop them into a realistic business plan for my clients. I have been working as a freelance designer for about 7 years now, and when it comes to creative thinking and marketing strategies I believe that excellence has no limit. I see every project as a creative challenge and a way to bring the idea behind it to life.";
 float fontSizeMax = 20;
 float fontSizeMin = 10;
 float spacing = 12; // line height
