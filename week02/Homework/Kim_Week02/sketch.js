@@ -80,10 +80,10 @@ function mousePressed() {
     y = mouseY;
     dangerous = dangerous - 20;
     if(xspeed == 10 || xspeed == -10){
-      xspeed = 2;
+      xspeed = random(-2,2);
     }
     if(yspeed == 10 || yspeed == -10){
-      yspeed = 2;
+      yspeed = random(-2,2);
     }
   } else {
     value = 0;
