@@ -59,7 +59,6 @@ function draw(){
       // strokeWeight(spectrum[i]/90);
       stroke(spectrum[i]*r/8,spectrum[i]/g,spectrum[i]/b,spectrum[i]*0.2);
       // arc(0, 0, spectrum[i]/2, spectrum[i]/2, 0, radians(spectrum[i]/2));
-       // line(0,0,2,h+r/4);
       line(0,0,0,h/10);
     }
 
@@ -87,10 +86,7 @@ function draw(){
     if(i>=683 && i<=1024){
       stroke(255,150);
       strokeWeight(2);
-      // beginShape();
-      // vertex(0,0);
-      // translate(0,spectrum[i]/10*i/spectrum[i]);
-      // rect(0,0,spectrum[i]/10,spectrum[i]/5);
+
       vertex(0,spectrum[i]/5*i/spectrum[i]);
       translate(0,spectrum[i]/5*i/spectrum[i]);
       noFill();
@@ -101,11 +97,6 @@ function draw(){
     pop();
     radius=radius+0.0005;
 
-    // print(r/150);
-
-    // vertex(-300, h);
-    // endShape();
-    // ellipse(x, height, width / spectrum.length, h )
   }
 
 
