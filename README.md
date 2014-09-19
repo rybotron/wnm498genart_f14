@@ -9,11 +9,13 @@ This collaborative course focuses on Generative Art, Creative Coding, and Implem
 * [WNM 498 Generative Art Fall 2014](https://www.facebook.com/groups/707648742623505/)
 
 ##Expectations
+
+* You are required to attend class, read the assigned materials, complete and submit all homework assignments, and gernerate a collaborative final project with other class members.
+* If you need to miss class please let me know in advance if possible.
 * Grading Breakdown
   * Homework Assignments: 35%
   * Attendance & Participation: 35%
   * Collaborative Final Project: 40%
-  * 
   
 ##Class Ethos
 
