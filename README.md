@@ -19,7 +19,7 @@ This collaborative course focuses on Generative Art, Creative Coding, and Implem
   
 ##Class Ethos
 
-* Everyone has a voice
+* *Everyone has a voice*
   * in shaping how the class goes
   * providing feedback
   * offering up solutions, especially if you have a better solution than I do
