@@ -25,7 +25,7 @@ This collaborative course focuses on Generative Art, Creative Coding, and Implem
   * offering up solutions, especially if you have a better solution than I do
 * Self-directed learning
 * The space to be wrong
-  * This is all an experiment, after all it’s experimental art / code
+  * This is all an experiment, it’s experimental art / code
 * No idea is a bad idea
 * Do not be afraid to fail
   * Being wrong can create new ideas that shape the project
