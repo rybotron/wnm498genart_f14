@@ -54,3 +54,4 @@ Resources
 * [Nature of Code](http://natureofcode.com/)
 * [JavaScript and JQuery: Interactive Front-End Web Development](http://javascriptbook.com/)
 * [Eloquent Javascript](http://eloquentjavascript.net/)
+* [Generative Design](http://www.generative-gestaltung.de/)
