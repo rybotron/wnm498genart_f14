@@ -5,8 +5,9 @@ Generative Art & Creative Code Fall 2014
 
 This collaborative course focuses on Generative Art, Creative Coding, and Implementing Emerging Technologies. Students will employ industry-standard methods, tools, and workflow to efficiently design and animate within the browser in a real-world environment. Advanced web standards, workflow, usability, testing, iterations, and implementation will be covered. 
 
-## Class Facebook Group
-* [WNM 498 Generative Art Fall 2014](https://www.facebook.com/groups/707648742623505/)
+## Class Wiki & Facebook Group'
+* [WNM 498 GenArt Wiki](https://github.com/rybotron/wnm498genart_f14/wiki)
+* [WNM 498 GenArt Facebook Group](https://www.facebook.com/groups/707648742623505/)
 
 ##Expectations
 
