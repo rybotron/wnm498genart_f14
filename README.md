@@ -1,18 +1,42 @@
 Generative Art & Creative Code Fall 2014 
--------------------------------
+========================================
 * Ryan Berkey [ryan@rybotron.com](mailto:ryan@rybotron.com)
 * Thursdays, 12:00pm - 2:50pm, Room 415
 
 This collaborative course focuses on Generative Art, Creative Coding, and Implementing Emerging Technologies. Students will employ industry-standard methods, tools, and workflow to efficiently design and animate within the browser in a real-world environment. Advanced web standards, workflow, usability, testing, iterations, and implementation will be covered. 
 
-### Class Facebook Group
+## Class Facebook Group
 * [WNM 498 Generative Art Fall 2014](https://www.facebook.com/groups/707648742623505/)
 
-###Expectations
+##Expectations
 * Grading Breakdown
   * Homework Assignments: 35%
   * Attendance & Participation: 35%
   * Collaborative Final Project: 40%
+  * 
+  
+##Class Ethos
+
+* Everyone has a voice
+  * in shaping how the class goes
+  * providing feedback
+  * offering up solutions, especially if you have a better solution than I do
+* Self-directed learning
+* The space to be wrong
+  * This is all an experiment, after all it’s experimental art / code
+* No idea is a bad idea
+* Do not be afraid to fail
+  * Being wrong can create new ideas that shape the project
+* Flexibility
+  * The outline of the class can change
+  * The scope of your projects can change bigger or smaller
+* Sharing
+  * Sharing ideas, knowledge, and inspiration
+  * By helping each other it advances the whole group so we can all get deeper into the material.
+* Engagement
+  * Come to class ready to be in class
+  * Projects are group focused and hands on
+
 
 Resources
 ---------
