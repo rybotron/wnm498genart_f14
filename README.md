@@ -23,19 +23,19 @@ This collaborative course focuses on Generative Art, Creative Coding, and Implem
   * in shaping how the class goes
   * providing feedback
   * offering up solutions, especially if you have a better solution than I do
-* Self-directed learning
-* The space to be wrong
+* *Self-directed learning*
+* *The space to be wrong*
   * This is all an experiment, it’s experimental art / code
-* No idea is a bad idea
-* Do not be afraid to fail
+  * No idea is a bad idea
+  * Do not be afraid to fail
   * Being wrong can create new ideas that shape the project
-* Flexibility
+* *Flexibility*
   * The outline of the class can change
   * The scope of your projects can change bigger or smaller
-* Sharing
+* *Sharing & Open Source*
   * Sharing ideas, knowledge, and inspiration
   * By helping each other it advances the whole group so we can all get deeper into the material.
-* Engagement
+* *Engagement*
   * Come to class ready to be in class
   * Projects are group focused and hands on
 
