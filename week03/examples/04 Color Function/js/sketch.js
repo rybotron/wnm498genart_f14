@@ -1,5 +1,5 @@
-// Academy of Art
-// WNM 498 Generative Art & Code
+// Academy of Art University
+// WNM 498 Generative Art & Creative Code
 //
 // Ryan Berkey
 // ryan@rybotron.com

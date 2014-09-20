@@ -1,4 +1,4 @@
-// Academy of Art
+// Academy of Art University
 // WNM 498 Generative Art & Creative Code
 //
 // Ryan Berkey

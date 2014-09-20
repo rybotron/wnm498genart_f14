@@ -1,3 +1,9 @@
+// Academy of Art University
+// WNM 498 Generative Art & Creative Code
+//
+// Ryan Berkey
+// ryan@rybotron.com
+
 var seed = 1,
 	tileCount = 20,
 	circleRGBA;
