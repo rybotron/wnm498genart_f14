@@ -7,11 +7,12 @@
     <script src="libraries/p5.js" type="text/javascript"></script>
 	<script src="libraries/p5.sound.js" type="text/javascript"></script>
 	<script src="libraries/three.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="libraries/OculusRiftEffect.js"></script>
 	<script src="libraries/dat.gui.min.js"></script>
 	<script type="text/javascript" src="js/sketch.js"></script>
-
-		<!--The canvas loader-->
+	<!--The canvas loader-->
     <script src="http://heartcode-canvasloader.googlecode.com/files/heartcode-canvasloader-min-0.9.1.js"></script>
+    <!-- Slightly modified version of OculusRiftEffect.js from THREE.js to target for DK2 -->
     <style> 
   		body {padding: 0; margin: 0; overflow: hidden; background-color:black;} 
   		canvas{ padding:0; }
@@ -69,7 +70,7 @@
 
 
      var LoadingText = document.createElement('div');
-     LoadingText.innerHTML = "<h2>CLICK EVERYWHERE TO GO FULLSCREEN</h2>";
+     LoadingText.innerHTML = "<h2>PRESS 'F' FOR FULLSCREEN</h2>";
      LoadingText.setAttribute('class', 'myclass'); 
      loaderObj.appendChild(LoadingText);
     </script>
