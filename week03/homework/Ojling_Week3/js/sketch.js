@@ -1,12 +1,15 @@
 var gui;
-var transforms = {
-  modifier: 0.1
-};
+var transforms; 
 
 function setup() {
   myCanvas = createCanvas(windowWidth, windowHeight);
   gui = new dat.GUI();
   gui.add(transforms, "modifier", 0, 5);
+
+  transforms = {
+    modifier: 0.1
+    xPos: width / 2
+  };
 }
  
 function draw() 
@@ -14,7 +17,7 @@ function draw()
   background(52, 54, 73);
   fill(227, 111, 33); 
   stroke(255);
-  ellipse( width / 2, height / 2, width / 4, width / 4 );
+  ellipse( transforms.xPos, height / 2, width / 4, width / 4 );
   push();
   translate( width / 2, height / 2);
   noFill();
