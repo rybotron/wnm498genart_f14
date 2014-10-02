@@ -25,8 +25,7 @@ function draw(){
 	if ( time > endTime ) startTime = time; // reset startTime to current time
 
 	// Map the time to the startTime and endTime to 0, 100
-	radius = map( time, startTime, endTime, 0, 100 );
-	ellipse( width / 2, height / 2, radius, radius );
+	new Cuboid(20, color(255, 255, 171, 100), 80, 35);
 
 }
 
