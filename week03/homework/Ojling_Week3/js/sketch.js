@@ -2,14 +2,14 @@ var gui;
 var transforms; 
 
 function setup() {
+    transforms = {
+    modifier: 0.1,
+    xPos: width / 2,
+    yPos: width / 2
+  }
   myCanvas = createCanvas(windowWidth, windowHeight);
   gui = new dat.GUI();
-  gui.add(transforms, "modifier", 0, 5);
-
-  transforms = {
-    modifier: 0.1
-    xPos: width / 2
-  };
+  gui.add(transforms, "modifier", 0,5);
 }
  
 function draw() 
@@ -17,9 +17,9 @@ function draw()
   background(52, 54, 73);
   fill(227, 111, 33); 
   stroke(255);
-  ellipse( transforms.xPos, height / 2, width / 4, width / 4 );
+  ellipse( transforms.xPos, transforms.yPos, width / 4, width / 4 );
   push();
-  translate( width / 2, height / 2);
+  translate( transforms.xPos, transforms.yPos);
   noFill();
   stroke(255);
   rotate(millis() * transforms.modifier * -0.001);
