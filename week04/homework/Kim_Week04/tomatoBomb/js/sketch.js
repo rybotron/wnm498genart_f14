@@ -47,7 +47,7 @@ function draw(){
 
       particles[i].show();
       particles[i].move();
-      particles[i].ySpeed += particles[i].size/60;
+      particles[i].ySpeed += particles[i].size/random(60,80);
   }
 
 }
