@@ -22,14 +22,14 @@ function setup(){
     // particles.push( new Ball() );
     // particles[i].xSpeed = random(-1,1);
     particles[i].yPos = random(10,20);
-    particles[i].size = random(5,17);
+    particles[i].size = random(3,17);
 
     //particle speed based on Mass X Gravity
-    particles[i].ySpeed += particles[i].size/4;
+    // particles[i].ySpeed += particles[i].size/4;
 
     var mass = 20 - particles[i].size;
     particles[i].xSpeed = mass/5 * random(-1,1);
-
+      // particles[i].xSpeed = random(-2,2);
   };
 };
 
@@ -47,7 +47,7 @@ function draw(){
 
       particles[i].show();
       particles[i].move();
-      particles[i].ySpeed += particles[i].size/100;
+      particles[i].ySpeed += particles[i].size/60;
   }
 
 }
@@ -60,7 +60,7 @@ function draw(){
 
 var Ball = function(){
   this.size = 40;
-  this.color = color(200,75,65,255);
+  this.color = color(227,45,47,random(150,255));
   this.xPos = width/2;
   this.yPos = height/2;
   this.xSpeed = 0;
