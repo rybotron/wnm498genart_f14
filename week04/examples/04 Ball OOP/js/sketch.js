@@ -5,7 +5,7 @@
 // Ryan Berkey
 // ryan@rybotron.com
 
-var ballOne, 
+var ballOne,
     ballTwo;
 
 function setup() {
@@ -35,7 +35,7 @@ function Ball( type ){
 
 }
 
-// Add methods specific to Ball objects to the prototype 
+// Add methods specific to Ball objects to the prototype
 Ball.prototype.display = function() {
    stroke(100);
    fill(0);
