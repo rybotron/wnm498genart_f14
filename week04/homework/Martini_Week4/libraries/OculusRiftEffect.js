@@ -13,7 +13,6 @@ THREE.OculusRiftEffect = function ( renderer, options ) {
     // Specific HMD parameters
     var HMD = (options && options.HMD) ? options.HMD: {
         // Parameters from the Oculus Rift DK1
-        
         hResolution: 1280,
         vResolution: 800,
         /*
