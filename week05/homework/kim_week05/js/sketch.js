@@ -42,7 +42,7 @@ function draw() {
   }
   // Get the amplitude level in a 0.0 - 1.0 range then scaling it by ampScale
   levelOne = amp.getLevel(1);
-  diameter = map( levelOne, 0, 2, 10, 200);
+  diameter = map( levelOne, 0, 1, 10, 200);
 
   levelTwo = amp.getLevel(0.5);
 
