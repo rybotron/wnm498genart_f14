@@ -18,11 +18,11 @@ function setup() {
 
 function draw() {
 
-	background(230,240,250);
+	background(250,245,240);
 	noStroke();
 	fill(0);
 
-	translate(windowWidth / 2, windowHeight / 2);
+
 	var level = amp.getLevel(); // Get the amplitude level in a 0.0 - 1.0 range then scaling it by ampScale
 
 	var diameter = map( level, 0, 1, 10, 500);
@@ -31,10 +31,9 @@ function draw() {
 		fill(255-diameter/2,200,200)
 	} else {
 		fill(50,50,255-diameter/2)
+		background(250-diameter/10,245-diameter/10,240-diameter/10,50);
 	}
 
+	translate(windowWidth / 2, windowHeight / 2);
 	ellipse( 0, 0, diameter*2, diameter*2 );
-
-
-
 }
