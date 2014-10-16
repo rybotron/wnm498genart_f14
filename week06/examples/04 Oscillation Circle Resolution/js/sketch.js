@@ -21,6 +21,12 @@ function draw() {
 	strokeWeight( 5 );
 	stroke(0);
 
+	if( circleResolution % 2 ){
+		rotate( PI / circleResolution / 2 );
+	}else{
+		rotate( PI / circleResolution );
+	}
+	
 	beginShape();
 	for ( var i = 0; i <= circleResolution; i++ ){
 
