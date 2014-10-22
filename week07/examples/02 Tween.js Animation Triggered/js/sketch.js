@@ -127,7 +127,7 @@ function keyTyped(){
 			sounds[4].play();
 			break;
 		case "y":
-			taps[5].aanimate( {diameter: random(100,500)}, random(250, 1000) );
+			taps[5].animate( {diameter: random(100,500)}, random(250, 1000) );
 			sounds[5].play();
 			break;
 		case "u":
