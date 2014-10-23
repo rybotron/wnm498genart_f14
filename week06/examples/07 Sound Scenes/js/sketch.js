@@ -56,20 +56,3 @@ function draw() {
         ellipse(width / 2, height / 2, level*1000, level*1000);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
