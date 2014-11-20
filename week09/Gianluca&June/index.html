@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Winter</title>
+    <style> 
+  		body {background-color: black; padding: 0; margin: 0 !important; overflow: hidden; font-family: helvetica,arial;} 
+  		canvas{ padding:0; }
+  		#overlay{position: absolute; background-color: black; width: 100%; height: 100%;}
+  		#overlay p {font-size: 40px; text-align: center; color: white; padding-top: 20%;}
+
+   		div#context{position: absolute; top: 26%; left: 12%; color: #ffffff; font-weight: 100; line-height: 1.7em !important; font-size: 16pt; display: none; opacity: 0.75;}
+   		h1{ font-weight: 700; font-size: 60pt; margin-bottom: 50px;}
+   		span {font-weight: 700; font-size: 24pt;}
+  	</style>
+</head>
+<body> <!-- XML <- Connector -> HTML -->
+	<script type="text/javascript" src="./libraries/three.min.js"></script>
+	<script type="text/javascript" src="./libraries/stats.min.js"></script>
+	<script type="text/javascript" src="./libraries/dat.gui.min.js"></script>
+	<script type="text/javascript" src="./libraries/TrackballControls.js"></script>
+	<script type="text/javascript" src="js/Detector.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+	<!--<script src='./libraries/myo.js'></script>-->
+
+	<div id="overlay">
+		<p>Getting Weather Information...</p>
+	</div>
+
+	<!-- SHADER TO GENERATE SKYDOME-->
+	<script type="x-shader/x-vertex" id="vertexShader">
+
+		varying vec3 vWorldPosition;
+
+		void main() {
+
+			vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+			vWorldPosition = worldPosition.xyz;
+
+			gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+		}
+
+	</script>
+
+	<script type="x-shader/x-fragment" id="fragmentShader">
+
+		uniform vec3 topColor;
+		uniform vec3 bottomColor;
+		uniform float offset;
+		uniform float exponent;
+
+		varying vec3 vWorldPosition;
+
+		void main() {
+
+			float h = normalize( vWorldPosition + offset ).y;
+			gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h , 0.0), exponent ), 0.0 ) ), 1.0 );
+
+		}
+	</script>
+
+	<!-- SHADER TO GENERATE SNOW-->
+	<script type="x-shader/x-vertex" id="snow_vs">
+		uniform float radiusX;
+		uniform float radiusZ;
+		uniform float size;
+		uniform float scale;
+		uniform float height;
+		uniform float elapsedTime;
+		uniform float speedH;
+		uniform float speedV;
+
+		void main() {
+			vec3 pos = position;
+			pos.x += cos((elapsedTime + position.z) * 0.25 * speedH) * radiusX;
+			pos.y = mod(pos.y - elapsedTime * speedV, height);
+			pos.z += sin((elapsedTime + position.x) * 0.25 * speedH) * radiusZ;
+
+			vec4 mvPosition = modelViewMatrix * vec4( pos, 1.0 );
+
+			gl_PointSize = size * ( scale / length( mvPosition.xyz ) );
+
+			gl_Position = projectionMatrix * mvPosition;
+		}
+	</script>
+	
+	<script type="x-shader/x-fragment" id="snow_fs">
+		uniform vec3 color;
+		uniform float opacity;
+		uniform sampler2D texture;
+
+		void main() {
+			vec4 texColor = texture2D( texture, gl_PointCoord );
+			gl_FragColor = texColor * vec4( color, opacity );
+		}
+	</script>
+	
+	<script type="text/javascript" src="js/sketch.js"></script>
+
+	<!-- Weather Text -->
+	<div id="context">
+	</div>
+
+	<script>
+		function displayWeather() {
+		
+		txt= 
+			"<h1>" + weatherData.name + "</h1>" +
+			"Weather " + "<span>" + weatherData.weather[0].description + "</span>" +
+			"<br />Temperature " + "<span>" + weatherData.main.temp + "</span>" +
+			"<br />Humidity " + "<span>" + weatherData.main.humidity + "</span>" +
+			"<br />Wind " + "<span>" + weatherData.wind.speed + "</span>" +
+			"<br />Clouds " + "<span>" + weatherData.clouds.all + "</span>";
+			document.getElementById("context").innerHTML=txt;
+		}
+	</script>
+</body>
+</html>
