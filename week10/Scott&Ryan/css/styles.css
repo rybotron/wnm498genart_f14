@@ -1,0 +1,885 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/* 12-column responsive grid */
+
+.row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+[class^="col-"] {
+    float: left;
+    margin: 0 3.84615384615% 0 0;
+    list-style: none;
+    position: relative;
+}
+
+[class^="col-"]:last-child {
+    margin: 0;
+}
+
+.col-1 { width: 4.8076923077% }
+.col-2 { width: 13.4615384615% }
+.col-3 { width: 22.1153846154% }
+.col-4 { width: 30.7692307692% }
+.col-5 { width: 39.4230769231% }
+.col-6 { width: 48.0769230769% }
+.col-7 { width: 56.7307692308% }
+.col-8 { width: 65.3846153846% }
+.col-9 { width: 74.0384615385% }
+.col-10 { width: 82.6923076923% }
+.col-11 { width: 91.3461538462% }
+.col-12 { width: 100%; margin: 0 }
+
+/*------------------------------
+Our styles 
+--------------------------------*/
+body, html{
+    font-size: 20px;
+   /* background-color:  #3F9A82;*/
+/*    background-color: #3F9A82;*/
+}
+canvas{
+    position:absolute;
+    top:0;
+    z-index: -999;
+}
+#wrapper{
+    display:block;
+    max-width:1500px;
+    margin:0 auto;
+    left:50%;
+    
+    position: fixed;
+    top: 50%;
+    margin-top: -200px;
+    margin-left:-475px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: "proxima-nova", Helvetica, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 100;
+    color:#EFDFC2;
+}
+
+h1{
+    font-size: 7em;
+    display:block;
+    line-height: .95em;
+    letter-spacing: .13em;
+    margin:0;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.5em;
+     display:block;
+    letter-spacing: .375em;
+    margin:1em auto 1em auto;
+    padding-bottom: 1em;
+    font-weight: 100;
+    text-transform: uppercase;
+    border-bottom: 3px solid #EFDFC2;
+}
+
+p{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .15em;
+
+}
+
+section{
+    
+}
+
+.titleScreen{
+
+   margin:0 auto 2% auto;
+    display:block;
+    
+    
+}
+
+.pickerScreen{
+
+    margin:5% auto;
+    display:block;
+
+    
+}
+
+
+a{
+    display:inline-block;
+    width:100%;
+    text-align: center;
+    padding: .75em 0;
+    box-shadow: 0 0 0px 3px  #EFDFC2;
+    
+    text-decoration: none;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+
+    -webkit-transition: 150ms all ease-in-out;
+-moz-transition: 150ms all ease-in-out;
+-o-transition: 150ms all ease-in-out;
+transition: 150ms all ease-in-out;
+
+}
+
+.fall a:hover{
+    box-shadow:none;
+    animation:fall 5s linear infinite;
+    -moz-animation:fall 5s linear infinite; /* Firefox */
+    -webkit-animation:fall 5s linear infinite; /* Safari and Chrome */
+    -o-animation:fall 5s linear infinite; /* Opera */
+}
+
+@keyframes fall
+{
+0%,100%   {background:rgb(70,67,81);}
+25%  {background:rgb(194, 105, 98);}
+50%  {background:rgb(215, 129, 136);}
+75% {background:rgb(171, 117, 136);}
+
+}
+
+@-moz-keyframes fall /* Firefox */
+{
+0%,100%   {background:rgb(70,67,81);}
+25%  {background:rgb(194, 105, 98);}
+50%  {background:rgb(215, 129, 136);}
+75% {background:rgb(171, 117, 136);}
+}
+
+@-webkit-keyframes fall /* Safari and Chrome */
+{
+0%,100%   {background:rgb(70,67,81);}
+25%  {background:rgb(194, 105, 98);}
+50%  {background:rgb(215, 129, 136);}
+75% {background:rgb(171, 117, 136);}
+}
+
+@-o-keyframes fall /* Opera */
+{
+0%,100%   {background:rgb(70,67,81);}
+25%  {background:rgb(194, 105, 98);}
+50%  {background:rgb(215, 129, 136);}
+75% {background:rgb(171, 117, 136);}
+}
+
+
+.winter a:hover{
+    box-shadow:none;
+    animation:winter 5s linear infinite;
+    -moz-animation:winter 5s linear infinite; /* Firefox */
+    -webkit-animation:winter 5s linear infinite; /* Safari and Chrome */
+    -o-animation:winter 5s linear infinite; /* Opera */
+}
+
+@keyframes winter
+{
+0%,100%   {background:rgb(34, 72, 96);}
+25%  {background:rgb(66, 107, 131);}
+50%  {background:rgb( 55, 134, 153);}
+75% {background:rgb( 168, 202, 218);}
+
+}
+
+@-moz-keyframes winter /* Firefox */
+{
+0%,100%   {background:rgb(34, 72, 96);}
+25%  {background:rgb(66, 107, 131);}
+50%  {background:rgb( 55, 134, 153);}
+75% {background:rgb( 168, 202, 218);}
+}
+
+@-webkit-keyframes winter /* Safari and Chrome */
+{
+0%,100%   {background:rgb(34, 72, 96);}
+25%  {background:rgb(66, 107, 131);}
+50%  {background:rgb( 55, 134, 153);}
+75% {background:rgb( 168, 202, 218);}
+}
+
+@-o-keyframes winter /* Opera */
+{
+0%,100%   {background:rgb(34, 72, 96);}
+25%  {background:rgb(66, 107, 131);}
+50%  {background:rgb( 55, 134, 153);}
+75% {background:rgb( 168, 202, 218);}
+}
+
+
+
+
+.spring a:hover{
+    box-shadow:none;
+    animation:spring 5s linear infinite;
+    -moz-animation:spring 5s linear infinite; /* Firefox */
+    -webkit-animation:spring 5s linear infinite; /* Safari and Chrome */
+    -o-animation:spring 5s linear infinite; /* Opera */
+}
+
+@keyframes spring
+{
+0%,100%   {background:rgb(104, 214, 147);}
+25%  {background:rgb(249, 115, 115);}
+50%  {background:rgb( 255, 153, 102);}
+75% {background:rgb( 55,94,72);}
+
+}
+
+@-moz-keyframes spring /* Firefox */
+{
+0%,100%   {background:rgb(104, 214, 147);}
+25%  {background:rgb(249, 115, 115);}
+50%  {background:rgb( 255, 153, 102);}
+75% {background:rgb( 55,94,72);}
+}
+
+@-webkit-keyframes spring /* Safari and Chrome */
+{
+0%,100%   {background:rgb(104, 214, 147);}
+25%  {background:rgb(249, 115, 115);}
+50%  {background:rgb( 255, 153, 102);}
+75% {background:rgb( 55,94,72);}
+}
+
+@-o-keyframes spring /* Opera */
+{
+0%,100%   {background:rgb(104, 214, 147);}
+25%  {background:rgb(249, 115, 115);}
+50%  {background:rgb( 255, 153, 102);}
+75% {background:rgb( 55,94,72);}
+}
+
+
+.summer a:hover{
+    box-shadow:none;
+    animation:summer 5s linear infinite;
+    -moz-animation:summer 5s linear infinite; /* Firefox */
+    -webkit-animation:summer 5s linear infinite; /* Safari and Chrome */
+    -o-animation:summer 5s linear infinite; /* Opera */
+}
+
+@keyframes summer
+{
+0%,100%   {background:rgb(196, 87, 87);}
+25%  {background:rgb(249, 115, 115);}
+50%  {background:rgb( 255, 153, 102);}
+75% {background:rgb( 255, 204, 102);}
+
+}
+
+@-moz-keyframes summer /* Firefox */
+{
+0%,100%   {background:rgb(196, 87, 87);}
+25%  {background:rgb(249, 115, 115);}
+50%  {background:rgb( 255, 153, 102);}
+75% {background:rgb( 255, 204, 102);}
+}
+
+@-webkit-keyframes summer /* Safari and Chrome */
+{
+0%,100%   {background:rgb(196, 87, 87);}
+25%  {background:rgb(249, 115, 115);}
+50%  {background:rgb( 255, 153, 102);}
+75% {background:rgb( 255, 204, 102);}
+}
+
+@-o-keyframes summer /* Opera */
+{
+0%,100%   {background:rgb(196, 87, 87);}
+25%  {background:rgb(249, 115, 115);}
+50%  {background:rgb( 255, 153, 102);}
+75% {background:rgb( 255, 204, 102);}
+}
+.row{
+    margin-top:4em;
+}
+/*
+==============================================
+slideRight
+==============================================
+*/
+
+
+.titleSlide{
+    animation-name: titleSlide;
+    -webkit-animation-name: titleSlide; 
+
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out;     
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes titleSlide {
+    0% {
+        -webkit-transform: translateX(-10%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+        -webkit-opacity: 1;
+    }
+}
+
+.tagSlide{
+    animation-name: tagSlide;
+    -webkit-animation-name: tagSlide; 
+
+    animation-duration: 1.5s; 
+    -webkit-animation-duration: 1.5s;
+
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out;     
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes tagSlide {
+    0% {
+        -webkit-transform: translateX(-10%);
+        -webkit-opacity: 0;
+    }
+    15% {
+        -webkit-transform: translateX(-10%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(00%);
+        -webkit-opacity: 1;
+    }
+}
+
+.description{
+    animation-name: description;
+    -webkit-animation-name: description; 
+
+    animation-duration: 1.75s; 
+    -webkit-animation-duration: 1.75s;
+
+    animation-timing-function: ease-out; 
+    -webkit-animation-timing-function: ease-out;     
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes description {
+    0% {
+        -webkit-transform: translateX(-10%);
+        -webkit-opacity: 0;
+    }
+    30% {
+        -webkit-transform: translateX(-10%);
+        -webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(00%);
+        -webkit-opacity: 1;
+    }
+}
+
+.spring{
+    animation-name: springAnimation;
+    -webkit-animation-name: springAnimation; 
+
+    animation-duration: 2.7s;   
+    -webkit-animation-duration: 2.7s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes springAnimation {
+    0% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;       
+    }
+    60% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;   
+    }
+    80% {
+        -webkit-transform: scale(1);
+    }
+    90% {
+        -webkit-transform: scale(0.95);
+        opacity: 1; 
+    }   
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
+}
+
+
+.summer{
+    animation-name: summerAnimation;
+    -webkit-animation-name: summerAnimation; 
+
+    animation-duration: 3s;   
+    -webkit-animation-duration: 3s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes summerAnimation {
+    0% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;       
+    }
+    60% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;   
+    }
+    80% {
+        -webkit-transform: scale(1);
+    }
+    90% {
+        -webkit-transform: scale(0.95);
+        opacity: 1; 
+    }   
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
+}
+
+
+.summer{
+    animation-name: summerAnimation;
+    -webkit-animation-name: summerAnimation; 
+
+    animation-duration: 3.3s;   
+    -webkit-animation-duration: 3.3s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes summerAnimation {
+    0% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;       
+    }
+    60% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;   
+    }
+    80% {
+        -webkit-transform: scale(1);
+    }
+    90% {
+        -webkit-transform: scale(0.95);
+        opacity: 1; 
+    }   
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
+}
+
+.fall{
+    animation-name: fallAnimation;
+    -webkit-animation-name: fallAnimation; 
+
+    animation-duration: 3.6s;   
+    -webkit-animation-duration: 3.6s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes fallAnimation {
+    0% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;       
+    }
+    65% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;   
+    }
+    80% {
+        -webkit-transform: scale(1);
+    }
+    90% {
+        -webkit-transform: scale(0.95);
+        opacity: 1; 
+    }   
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
+}
+
+.winter{
+    animation-name: winterAnimation;
+    -webkit-animation-name: winterAnimation; 
+
+    animation-duration: 3.9s;   
+    -webkit-animation-duration: 3.9s;
+
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+
+    visibility: visible !important; 
+}
+
+
+
+@-webkit-keyframes winterAnimation {
+    0% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;       
+    }
+    70% {
+        -webkit-transform: scale(.5);
+        opacity: 0.0;   
+    }
+    80% {
+        -webkit-transform: scale(1);
+    }
+    90% {
+        -webkit-transform: scale(0.95);
+        opacity: 1; 
+    }   
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
+}
+/*
+/*
