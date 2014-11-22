@@ -30,7 +30,7 @@ function draw() {
 
 //sets the time to a floored number
 var t = floor( sound.currentTime()) %5;
-//print(t);
+print(t);
 
 accum+= level;
 
